@@ -7,13 +7,13 @@ public class TransformList {
 	final static List<String> friends = 
 			Arrays.asList("Brian", "Nate", "Raju", "Sara", "Scott", "Freddy");
 	
-	private static void printWithTitle(List<String> list, String title) {
+	public static void printWithTitle(List<String> list, String title) {
 		System.out.println(title + "...");
 		list.stream().forEach(System.out::println);
 		System.out.println("");
 	}
 	
-	private static void printIntsWithTitle(List<Integer> list, String title) {
+	public static void printIntsWithTitle(List<Integer> list, String title) {
 		final List<String> stringList =
 				list.stream().map(item -> item.toString())
 				.collect(Collectors.toList());
