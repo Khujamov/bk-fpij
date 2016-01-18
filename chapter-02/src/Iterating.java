@@ -22,7 +22,19 @@ public class Iterating {
 		});
 		
 		// Functional but with using lambdas
+		System.out.println("");
+		System.out.println("Functional but with using lambdas");
 		friends.forEach((final String name) -> System.out.println(name));;
+		
+		// Functional without the unnecessary declaration
+		System.out.println("");
+		System.out.println("Functional without the unnecessary declaration");
+		friends.forEach(name -> System.out.println(name));
+		
+		// Functional using method reference
+		System.out.println("");
+		System.out.println("Functional using method reference");
+		friends.forEach(System.out::println);
 	}
 
 }
