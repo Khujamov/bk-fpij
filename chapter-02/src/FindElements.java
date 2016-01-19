@@ -3,6 +3,11 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import us.cyzic.fpij.collections.TransformList;
+
+import static java.util.stream.Collectors.*;
+import static us.cyzic.fpij.collections.TransformList.*;
+
 public class FindElements {
 
 	final static List<String> friends = 
@@ -16,20 +21,25 @@ public class FindElements {
 					.filter(item -> item.startsWith("B") || item.startsWith("S"))
 					.collect(Collectors.toList());
 		
-		TransformList.printWithTitle(sAndBNames, "A simple filter");
+		printWithTitle(sAndBNames, "A simple filter");
 		
 		// Using a predicate
 		final Predicate<String> startsWithS = name -> name.startsWith("S");
+		final Predicate<String> startsWithB = name -> name.startsWith("B");
 		
 		final List<String> sNames = 
 				friends.stream()
 					.filter(startsWithS)
-					.collect(Collectors.toList());
+					.collect(toList());
 		
-		TransformList.printWithTitle(sNames, "Using a predicate");
+		printWithTitle(sNames, "'S' names using a predicate");
 		
+		final List<String> bNames =
+				friends.stream()
+					.filter(startsWithB)
+					.collect(toList());
 		
-		
+		printWithTitle(bNames, "'B' names using a predicate");
 	}
 
 }
