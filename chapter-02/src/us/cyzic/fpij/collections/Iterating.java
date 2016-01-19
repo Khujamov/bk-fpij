@@ -1,3 +1,4 @@
+package us.cyzic.fpij.collections;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;

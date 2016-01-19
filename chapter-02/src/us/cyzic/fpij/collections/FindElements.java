@@ -1,9 +1,8 @@
+package us.cyzic.fpij.collections;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-
-import us.cyzic.fpij.collections.TransformList;
 
 import static java.util.stream.Collectors.*;
 import static us.cyzic.fpij.collections.TransformList.*;
