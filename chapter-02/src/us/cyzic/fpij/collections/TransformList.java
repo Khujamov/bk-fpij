@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class TransformList {
 
-	final static List<String> friends = 
+	public final static List<String> friends = 
 			Arrays.asList("Brian", "Nate", "Raju", "Sara", "Scott", "Freddy");
 	
 	public static void printWithTitle(List<String> list, String title) {
