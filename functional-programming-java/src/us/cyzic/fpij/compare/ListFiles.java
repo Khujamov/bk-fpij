@@ -9,7 +9,7 @@ public class ListFiles {
 	public static void main(String[] args) throws IOException {
 		
 		System.out.println("All files and subdirectories:");
-		Files.list(Paths.get("../."))
+		Files.list(Paths.get("./src/us/cyzic/fpij/compare"))
 			.forEach(System.out::println);
 		System.out.println();
 		
