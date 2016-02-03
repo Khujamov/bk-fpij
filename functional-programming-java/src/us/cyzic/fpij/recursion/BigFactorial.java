@@ -1,4 +1,4 @@
-package recursion;
+package us.cyzic.fpij.recursion;
 
 import java.math.BigInteger;
 

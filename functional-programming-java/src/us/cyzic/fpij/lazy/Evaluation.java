@@ -1,4 +1,4 @@
-package lazy;
+package us.cyzic.fpij.lazy;
 
 import java.util.function.Supplier;
 
